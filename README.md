@@ -1,55 +1,55 @@
-# Articles Management System
+# Système de Gestion des Articles
 
-A Spring Boot application for managing articles with JWT authentication.
+Une application Spring Boot pour la gestion des articles avec authentification JWT.
 
-## Installation & Running Instructions
+## Instructions d'Installation et d'Exécution
 
-### Prerequisites
-- Java 17 or higher
+### Prérequis
+- Java 17 ou supérieur
 - Maven 3.6+
 - MySQL 8.0+
 - Git
 
-### Backend Setup
+### Configuration Backend
 
-1. **Clone the Repository**
+1. **Cloner le Répertoire**
    ```bash
    git clone https://github.com/MD-Salem/gestion-des-articles-springboot.git
    cd articles
    ```
 
-2. **Database Setup**
-   - Create a MySQL database named `articles_db`
-   - Update `src/main/resources/application.properties` with your database credentials
+2. **Configuration de la Base de Données**
+   - Créer une base de données MySQL nommée `articles_db`
+   - Mettre à jour `src/main/resources/application.properties` avec vos identifiants de base de données
 
-3. **Build & Run**
+3. **Compiler et Exécuter**
    ```bash
    mvn clean install
    mvn spring-boot:run
    ```
-   The backend API will be available at `http://localhost:8080`
+   L'API backend sera disponible sur `http://localhost:8080`
 
-### Frontend Setup
+### Configuration Frontend
 
-1. **Clone the Frontend Repository**
+1. **Cloner le Répertoire Frontend**
    ```bash
    git clone https://github.com/medsaddemhamdi/articles-frontend.git
    cd articles-frontend
    ```
 
-2. Follow the setup instructions in the frontend repository's README
+2. Suivez les instructions d'installation dans le README du répertoire frontend
 
-## API Documentation
+## Documentation de l'API
 
-Once the application is running, you can access the API documentation at:
-- Swagger UI: `http://localhost:8080/swagger-ui.html`
-- API Docs: `http://localhost:8080/v3/api-docs`
+Une fois l'application lancée, vous pouvez accéder à la documentation de l'API sur :
+- Interface Swagger : `http://localhost:8080/swagger-ui.html`
+- Documentation API : `http://localhost:8080/v3/api-docs`
 
-## Features
+## Fonctionnalités
 
-- Article management (CRUD operations)
-- Author management
-- User authentication with JWT
-- Role-based access control
-- RESTful API endpoints
-- Swagger documentation
+- Gestion des articles (opérations CRUD)
+- Gestion des auteurs
+- Authentification utilisateur avec JWT
+- Contrôle d'accès basé sur les rôles
+- Points de terminaison API RESTful
+- Documentation Swagger
